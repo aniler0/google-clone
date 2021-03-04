@@ -1,0 +1,65 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.navbar h4 {
+  margin-left: 3px;
+
+  color: gray;
+  align-items: center;
+  font-size: small;
+  font-weight: bolder;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+.navbar a {
+  color: gray;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+.searchPage__option .active {
+  color: rgb(44, 93, 253);
+}
+.leftOptions {
+  display: flex;
+  margin-left: 10em;
+}
+.rightOptions {
+  display: flex;
+  margin-right: 20em;
+}
+.rightOptions a {
+  margin-left: 10px;
+}
+h4:active {
+  color: blue;
+}
+@media screen and (max-width: 750px) {
+  .navbar {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto;
+    margin-left: 30px;
+  }
+  .navbar a {
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  .navbar .MuiSvgIcon-root {
+    display: none;
+  }
+  .rightOptions {
+    display: none;
+  }
+  .navbar > h4 {
+    display: none;
+  }
+
+  .leftOptions {
+    margin-left: 0;
+  }
+}
